@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community App</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Community Hub</h1>
+      <button id="themeToggle">🌙</button>
+    </header>
+
+    <section class="post-form">
+      <h2>Create a Post</h2>
+      <input type="text" id="userName" placeholder="Your Name" />
+      <input type="text" id="postTitle" placeholder="Post Title" />
+      <textarea
+        id="postContent"
+        placeholder="Write something..."
+        oninput="updateWordCount()"
+      ></textarea>
+      <p id="wordCount">Words: 0</p>
+      <button onclick="addPost()">Post</button>
+    </section>
+
+    <section id="postsContainer">
+      <h2>Community Posts</h2>
+      <div id="posts"></div>
+    </section>
+
+    <script src="script1.js"></script>
+  </body>
+</html>
